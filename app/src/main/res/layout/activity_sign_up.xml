@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".signUpActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/logo_1"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/campus_connect" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="474dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="151dp">
+
+            <EditText
+                android:id="@+id/f_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="@drawable/text_border"
+                android:hint="@string/f_name"
+                android:inputType=""
+                android:singleLine="true"
+                android:padding="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/Signup"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:targetApi="o" />
+
+            <EditText
+                android:id="@+id/l_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:autofillHints=""
+                android:background="@drawable/text_border"
+                android:hint="@string/l_name"
+                android:inputType=""
+                android:singleLine="true"
+                android:padding="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/Signup"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/f_name"
+                app:layout_constraintVertical_bias="0.0"
+                tools:targetApi="o" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/text_border"
+                android:ems="10"
+                android:hint="@string/email"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:padding="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/Signup"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/l_name"
+                app:layout_constraintVertical_bias="0.0"
+                tools:targetApi="o" />
+
+            <EditText
+                android:id="@+id/u_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/text_border"
+                android:ems="10"
+                android:hint="@string/u_name"
+                android:importantForAutofill="no"
+                android:inputType=""
+                android:singleLine="true"
+                android:padding="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/Signup"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email"
+                app:layout_constraintVertical_bias="0.0"
+                tools:targetApi="o" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/text_border"
+                android:ems="10"
+                android:hint="@string/_sign_password"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:singleLine="true"
+                app:layout_constraintBottom_toTopOf="@+id/Signup"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/u_name"
+                app:layout_constraintVertical_bias="0.0"
+                tools:targetApi="o" />
+
+            <EditText
+                android:id="@+id/school"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/text_border"
+                android:ems="10"
+                android:hint="@string/name_of_college"
+                android:importantForAutofill="no"
+                android:inputType=""
+                android:singleLine="true"
+                android:padding="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/Signup"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/password"
+                app:layout_constraintVertical_bias="0.0"
+                tools:targetApi="o" />
+
+
+            <RadioButton
+                android:id="@+id/service"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:buttonTint="@color/Orange"
+                android:checked="false"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/business_owner"
+                android:textColor="#fff"
+                android:padding="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/Signup"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/school"
+                app:layout_constraintVertical_bias="0.0"
+                tools:targetApi="lollipop" />
+
+            <RadioButton
+                android:id="@+id/client"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:buttonTint="@color/Orange"
+                android:checked="false"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/client"
+                android:textColor="#fff"
+                android:padding="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/Signup"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/service"
+                app:layout_constraintVertical_bias="0.0"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:id="@+id/Signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonstyle"
+                android:text="@string/sign_up"
+                android:textColor="#fff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/client" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

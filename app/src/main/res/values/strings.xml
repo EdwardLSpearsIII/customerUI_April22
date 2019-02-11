@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">First login</string>
+    <string name="password">PASSWORD</string>
+    <string name="username">USERNAME</string>
+    <string name="sign_up_link">Sign Up</string>
+    <string name="Learn_More">Learn More</string>
+    <string name="Go_Back">Go Back</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="last_name">Last Name</string>
+    <string name="f_name">First Name</string>
+    <string name="l_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="u_name">Username</string>
+    <string name="name_of_college">Name of College</string>
+    <string name="_sign_password">Password</string>
+    <string name="logo_1">logo1</string>
+    <string name="business_owner">Business Owner</string>
+    <string name="client">Client</string>
+    <string name="title_activity_business_user">BusinessUser</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_notification">Notifications</string>
+    <string name="nav_message">Messages</string>
+    <string name="nav_settings">Settings</string>
+</resources>

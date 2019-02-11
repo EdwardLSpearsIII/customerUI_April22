@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "978858982146",
+    "firebase_url": "https://campusconnect-e18f7.firebaseio.com",
+    "project_id": "campusconnect-e18f7",
+    "storage_bucket": "campusconnect-e18f7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978858982146:android:dddaf2c2c5af2725",
+        "android_client_info": {
+          "package_name": "com.example.admin1.firstlogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978858982146-phn3hct7ttlmvrvgahs9bsjq96aam1d1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.admin1.firstlogin",
+            "certificate_hash": "15f33349a6e772633bb642949d0391e1f7a7f9ea"
+          }
+        },
+        {
+          "client_id": "978858982146-sv6uefnio5199sm7cj3v5enuj0d0mqcn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqFTfSCvRxLVuVPeGk-ZRYV72w9yB1yuE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978858982146-sv6uefnio5199sm7cj3v5enuj0d0mqcn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
