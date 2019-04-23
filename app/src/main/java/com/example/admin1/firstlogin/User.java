@@ -1,6 +1,7 @@
 package com.example.admin1.firstlogin;
 
 public class User {
+
     String userId;
     String userFname;
     String userLname;
@@ -8,6 +9,7 @@ public class User {
     String userUname;
     String userPassword;
     String userSchool;
+    //String userPhoto;
 
     public User () {
 
@@ -21,6 +23,7 @@ public class User {
         this.userUname = userUname;
         this.userPassword = userPassword;
         this.userSchool = userSchool;
+        //this.userPhoto = userPhoto;
     }
 
     public String getUserId() {
@@ -50,4 +53,8 @@ public class User {
     public String getUserSchool() {
         return userSchool;
     }
+
+    //public String getUserPhoto() {
+     //   return userPhoto;
+   // }
 }

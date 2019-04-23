@@ -1,11 +1,10 @@
 package com.example.admin1.firstlogin;
 
+import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.Menu;
 import android.view.View;
-import android.content.Intent;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -18,27 +17,25 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class Login extends AppCompatActivity {
 
-
-
     private EditText userMail, userPassword;
     private Button btnLogin;
     private FirebaseAuth mAuth;
-    private Intent BusinessUser;
-
-
+    private Intent activity_customer_home2;
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+          setContentView(R.layout.activity_login);
+
 
         userMail = findViewById(R.id.Lmail);
         userPassword = findViewById(R.id.Lpass);
         btnLogin = findViewById(R.id.loginbtn);
         mAuth = FirebaseAuth.getInstance();
-        BusinessUser = new Intent(this, com.example.admin1.firstlogin.BusinessUser.class);
+
+        activity_customer_home2 = new Intent(this, com.example.admin1.firstlogin.activity_customer_home2.class);
 
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -54,38 +51,36 @@ public class Login extends AppCompatActivity {
                 else {
                     signIn(mail, password);
                 }
-
             }
         });
+
 
     }
 
     private void signIn(String mail, String password) {
 
-        mAuth.signInWithEmailAndPassword(mail, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
+      mAuth.signInWithEmailAndPassword(mail, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+          @Override
+          public void onComplete(@NonNull Task<AuthResult> task) {
 
-                if (task.isSuccessful()) {
+              if (task.isSuccessful()) {
 
-                    updateUI();
+                  updateUI();
 
-                }
-                else
-                    showMessage(task.getException().getMessage());
+              }
+              else
+                  showMessage(task.getException().getMessage());
 
-            }
-        });
-
-
+          }
+      });
     }
 
     private void updateUI() {
 
-        startActivity(BusinessUser);
+        startActivity(activity_customer_home2);
         finish();
-
     }
+
 
     private void showMessage(String text) {
 
@@ -93,15 +88,14 @@ public class Login extends AppCompatActivity {
     }
 
     @Override
-    protected void onStart() {
+    protected  void onStart() {
         super.onStart();
 
         FirebaseUser user = mAuth.getCurrentUser();
 
         if(user != null) {
-            //user is already connected so we need to redirect them to the home page
             updateUI();
-       }
+        }
     }
 
     public void signUp(View view){

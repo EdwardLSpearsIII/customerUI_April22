@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BusinessUser"
-    android:backgroundTint="#fff" tools:targetApi="lollipop">
+    android:backgroundTint="#fff"
+    tools:targetApi="lollipop">
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
@@ -16,5 +17,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:menu="@menu/navigation"/>
+        app:menu="@menu/navigation" />
+
 </android.support.constraint.ConstraintLayout>
