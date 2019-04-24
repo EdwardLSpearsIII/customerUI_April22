@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.admin1.firstlogin">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
@@ -9,7 +10,8 @@
         android:label="CustomerUI"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".Login"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -23,8 +25,11 @@
         <activity
             android:name=".BusinessUser"
             android:label="BusinessUser" />
-        <activity android:name=".activity_customer_home2" />
+        <!--<activity android:name=".activity_customer_home2" />
+        -->
+        <activity android:name=".navigationbar"/>
         <activity android:name=".profile_page"/>
+        <activity android:name=".LearnMore"/>
     </application>
 
 </manifest>

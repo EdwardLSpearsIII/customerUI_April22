@@ -251,7 +251,7 @@ public class signUpActivity extends AppCompatActivity {
 
 
     private void updateUI() {
-        Intent homeActivity = new Intent(getApplicationContext(),activity_customer_home2.class);
+        Intent homeActivity = new Intent(getApplicationContext(),navigationbar.class);
         startActivity(homeActivity);
         finish();
 

@@ -21,6 +21,7 @@ public class Login extends AppCompatActivity {
     private Button btnLogin;
     private FirebaseAuth mAuth;
     private Intent activity_customer_home2;
+    private Intent navigationbar;
 
 
 
@@ -77,7 +78,7 @@ public class Login extends AppCompatActivity {
 
     private void updateUI() {
 
-        startActivity(activity_customer_home2);
+        startActivity(navigationbar);
         finish();
     }
 
